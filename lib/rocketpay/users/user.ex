@@ -13,6 +13,8 @@ defmodule Rocketpay.User do
     field :password_hash, :string
     field :nickname, :string
 
+    has_one :account, Rocketpay.Account
+
     timestamps()
   end
 

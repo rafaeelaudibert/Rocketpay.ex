@@ -5,7 +5,11 @@ defmodule RocketpayWeb.UsersView do
       user: %{
         id: user.id,
         name: user.name,
-        nickname: user.nickname
+        nickname: user.nickname,
+        account: %{
+          id: user.account.id,
+          balance: user.account.balance
+        }
       }
     }
   end
